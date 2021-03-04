@@ -11,9 +11,20 @@ package lab.pkg0;
  */
 public enum Size {
 
- SMALL(32, 36, "Pequeno",'S'),
- MEDIUM(37, 44, "Médio",'M'),
- LARGE(45, 52, "Grande",'L');
+    /**
+     *
+     */
+    SMALL(32, 36, "Pequeno",'S'),
+
+    /**
+     *
+     */
+    MEDIUM(37, 44, "Médio",'M'),
+
+    /**
+     *
+     */
+    LARGE(45, 52, "Grande",'L');
  private final String description;
  private final int minValue;
  private final int maxValue;
@@ -29,16 +40,36 @@ public enum Size {
  public String toString() {
  return this.description;
  }
- public String getDescription() {
+
+    /**
+     *
+     * @return Descrição
+     */
+    public String getDescription() {
  return description;
  }
- public int getMinValue() {
+
+    /**
+     *
+     * @return Valor mínimo
+     */
+    public int getMinValue() {
  return minValue;
  }
- public int getMaxValue() {
+
+    /**
+     *
+     * @return Valor máximo
+     */
+    public int getMaxValue() {
  return maxValue;
  }
- public char getCode() {
+
+    /**
+     *
+     * @return Código do produto
+     */
+    public char getCode() {
  return code;
  }
 
